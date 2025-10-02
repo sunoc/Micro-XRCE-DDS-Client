@@ -57,12 +57,12 @@ set(UCLIENT_MAX_INPUT_RELIABLE_STREAMS 1 CACHE STRING "Set the maximum number of
 set(UCLIENT_MAX_SESSION_CONNECTION_ATTEMPTS 10 CACHE STRING "Set the number of connection attemps.")
 set(UCLIENT_MIN_SESSION_CONNECTION_INTERVAL 1000 CACHE STRING "Set the connection interval in milliseconds.")
 set(UCLIENT_MIN_HEARTBEAT_TIME_INTERVAL 100 CACHE STRING "Set the time interval between heartbeats in milliseconds.")
-set(UCLIENT_UDP_TRANSPORT_MTU 512 CACHE STRING "Set the UDP transport MTU.")
-set(UCLIENT_TCP_TRANSPORT_MTU 512 CACHE STRING "Set the TCP transport MTU.")
-set(UCLIENT_SERIAL_TRANSPORT_MTU 512 CACHE STRING "Set the Serial transport MTU.")
+set(UCLIENT_UDP_TRANSPORT_MTU 4096 CACHE STRING "Set the UDP transport MTU.")
+set(UCLIENT_TCP_TRANSPORT_MTU 4096 CACHE STRING "Set the TCP transport MTU.")
+set(UCLIENT_SERIAL_TRANSPORT_MTU 4096 CACHE STRING "Set the Serial transport MTU.")
 
 option(UCLIENT_PROFILE_CUSTOM_TRANSPORT "Enable Custom transport." ON)
-set(UCLIENT_CUSTOM_TRANSPORT_MTU 512 CACHE STRING "Set the Custom transport MTU.")
+set(UCLIENT_CUSTOM_TRANSPORT_MTU 4096 CACHE STRING "Set the Custom transport MTU.")
 
 option(UCLIENT_PROFILE_MULTITHREAD "Enable multithread support." OFF)
 option(UCLIENT_PROFILE_SHARED_MEMORY "Enable shared memory transport support." OFF)
